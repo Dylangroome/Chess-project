@@ -30,6 +30,15 @@ main {
   font-size: x-large;
 }
 
+.container-board {
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -75,13 +84,10 @@ button {
   width: 800px;
   height: 800px;
   display: grid;
-  margin: 0 auto;
-
+  margin: 0 10px;
   grid-template-rows: repeat(8, 100px);
   grid-template-columns: repeat(8, 100px);
-
-  background-color: #000000;
-
+  box-shadow: #23230d 0 0 1000px 50px;
 }
 
 .row_1, .row_3, .row_5, .row_7 {
@@ -91,10 +97,28 @@ button {
 }
 
 .col_b, .col_d, .col_f,  .col_h{
-
   background-color: #ffffff;
 }
 
+.col-lables{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col-lables p{
+  margin: 0;
+  padding: 0 40px;
+}
+
+.row-lables {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.row-lables p {
+  margin: 30px 0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
