@@ -28,6 +28,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: x-large;
 }
 
 .container {
@@ -74,6 +75,28 @@ button {
 #start:hover {
   background-color: #15aa15;
 }
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 15px;
+  background-color: #000000;
+
+}
+
+.row_1, .row_3, .row_5, .row_7 {
+  display: grid;
+  gap: 15px;
+  background-color: #ffffff;
+}
+
+.col_a, .col_c, .col_e,  .col_g{
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 15px;
+  background-color: #000000;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
