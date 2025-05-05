@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: #1e4943;
+  background-color: #dbe4b2;
 
 }
 
@@ -28,44 +28,51 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .container {
   display: flex;
   flex-direction: column;
-
   text-align: center;
-
   border-radius: 15%;
   color: coral;
-  background-color: #420700;
+  background-color: rgb(66, 7, 0, 0.8);
   opacity: 0.8;
-
-  box-shadow: #a3abec 10px 10px 10px 10px;
+  box-shadow: #a3abec 0 0 1000px 50px;
 
 }
 
 button {
-  border-radius: 50%;
+  font-family: "Fira Code Light", serif;
+  font-size: 20px;
+  border-radius: 5%;
   padding: 10px;
   margin: 20px;
   color: chocolate;
   background-color: blanchedalmond;
+  box-shadow: #e11400 0 0 1000px 5px;
 }
 
 #green:hover{
+
   background-color: #15aa15;
+
 }
 #orange:hover{
   background-color: #df9a43;
+
 }
 #red:hover{
   background-color: #f30909;
 }
 
-#start {
+#start-game {
+  font-family: Forte, serif;
 
+}
+
+#start:hover {
+  background-color: #15aa15;
 }
 /*
  * Remove text-shadow in selection highlight:
