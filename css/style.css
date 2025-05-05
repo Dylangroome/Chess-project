@@ -19,11 +19,10 @@ html {
 
 body {
   background-color: #dbe4b2;
-
 }
 
 main {
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,13 +54,10 @@ button {
 }
 
 #green:hover{
-
   background-color: #15aa15;
-
 }
 #orange:hover{
   background-color: #df9a43;
-
 }
 #red:hover{
   background-color: #f30909;
@@ -69,7 +65,6 @@ button {
 
 #start-game {
   font-family: Forte, serif;
-
 }
 
 #start:hover {
@@ -77,24 +72,27 @@ button {
 }
 
 .board {
+  width: 800px;
+  height: 800px;
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  gap: 15px;
+  margin: 0 auto;
+
+  grid-template-rows: repeat(8, 100px);
+  grid-template-columns: repeat(8, 100px);
+
   background-color: #000000;
 
 }
 
 .row_1, .row_3, .row_5, .row_7 {
-  display: grid;
-  gap: 15px;
+  /*display: grid;*/
+  /*gap: 15px;*/
   background-color: #ffffff;
 }
 
-.col_a, .col_c, .col_e,  .col_g{
-  display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  gap: 15px;
-  background-color: #000000;
+.col_b, .col_d, .col_f,  .col_h{
+
+  background-color: #ffffff;
 }
 
 /*
